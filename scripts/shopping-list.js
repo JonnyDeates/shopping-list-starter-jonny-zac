@@ -32,6 +32,7 @@ const generateShoppingItemsString = function (shoppingList) {
 const render = function () {
   // Filter item list if store prop is true by item.checked === false
   let items = [...store.items];
+  console.log(items)
   if (store.hideCheckedItems) {
     items = items.filter(item => !item.checked);
   }
@@ -129,13 +130,13 @@ const handleEditShoppingItemSubmit = function () {
 };
 
 const bindEventListeners = function () {
+  console.log(store, 'Here')
   handleNewItemSubmit();
   handleItemCheckClicked();
   handleDeleteItemClicked();
   handleEditShoppingItemSubmit();
   handleToggleFilterClick();
-    console.log(store);
-    console.log(store.foo);
+
 };
 
 // This object contains the only exposed methods from this module:

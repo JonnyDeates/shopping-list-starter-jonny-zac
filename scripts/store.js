@@ -1,4 +1,6 @@
+import item from './item.js';
+
 const items = [];
 const hideCheckedItems = false;
-const foo = 'bar';
-export default {items, hideCheckedItems, foo};
+
+export default {items, hideCheckedItems};
