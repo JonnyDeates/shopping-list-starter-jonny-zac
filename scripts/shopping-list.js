@@ -1,7 +1,4 @@
-const store = {
-  items: [],
-  hideCheckedItems: false
-};
+import store from './store.js';
 
 const generateItemElement = function (item) {
   let itemTitle = `<span class="shopping-item shopping-item__checked">${item.name}</span>`;
@@ -137,6 +134,8 @@ const bindEventListeners = function () {
   handleDeleteItemClicked();
   handleEditShoppingItemSubmit();
   handleToggleFilterClick();
+    console.log(store);
+    console.log(store.foo);
 };
 
 // This object contains the only exposed methods from this module:
