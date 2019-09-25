@@ -36,5 +36,8 @@ function findAndDelete(id) {
         this.items.splice(this.items.findIndex((item) => item.id === id), 1);
     }
 }
+function toggleCheckedFilter() {
+    this.hideCheckedItems = !this.hideCheckedItems;
+}
 
-export default {items, hideCheckedItems, addItem, findAndToggleChecked, findAndDelete, findAndUpdateName, findById};
+export default {items, hideCheckedItems, addItem, findAndToggleChecked, findAndDelete, findAndUpdateName, findById, toggleCheckedFilter};
